@@ -45,9 +45,9 @@ int main()
 	std::string image1_full_path = DIR_NAME+ImageInput1; //full path for product image
 	std::string image2_full_path = DIR_OUTPUT+"converted_image.jpg"; //full path for logo image
 
-	double height_of_prod = print_area_pixels_height_prod(userDataInput);
-	double width_of_prod = print_area_pixels_width_prod(userDataInput);
-	
+	double height_of_prod = print_area_pixels(userDataInput, false);
+	double width_of_prod = print_area_pixels(userDataInput, true);
+
 	resize(image1, image1, ratio_resize_prod(width_of_prod, height_of_prod, image1, image1_full_path, DIR_OUTPUT));
 
 	if( image1.empty())

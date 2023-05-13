@@ -12,7 +12,7 @@ cv::Mat productList(std::string a, std::string logo_dir, cv::Mat b, cv::Mat c, s
   double prod_w = c.size().width;
 	double prod_h = c.size().height;
 
-	resize(b, b, ratio_resize_logo(print_area_pixels_width(a), print_area_pixels_height(a), print_area_pixels_width_prod(a), print_area_pixels_height_prod(a), b, logo_dir, directory));
+	resize(b, b, ratio_resize_logo(print_area_pixels(a,true), print_area_pixels(a,false), print_area_pixels(a,true), print_area_pixels(a,false), b, logo_dir, directory));
 
 	std::string manual_input;
 	std::cout << BOLD(FMAG("\nManually place artwork onto product?"));

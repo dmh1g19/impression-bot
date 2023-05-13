@@ -28,16 +28,13 @@ add_executable(
 	product_data.cpp
 	ratio_resize_logo.cpp
 	print_area_regex.cpp
-	print_area_regex_prod_width.cpp
-	print_area_regex_prod_height.cpp
 	down_size.cpp
 	product_data.cpp
 	ratio_resize_logo.cpp 
 	image_type.cpp
 	place_interactive.cpp
 	custom_coordinates.cpp
-	find_values_x.cpp
-	find_values_y.cpp
+	find_values.cpp
 )
 target_link_libraries(impression-bot ${CURSES_LIBRARY})
 target_link_libraries(impression-bot ${ImageMagick_LIBRARIES})

@@ -42,10 +42,7 @@ void overlayImage(const cv::Mat &, const cv::Mat &, cv::Mat &, cv::Point2i);
 void place_interactive(std::string, cv::Mat, cv::Mat);
 void custom_coordinates(std::string, int, int);
 
-double print_area_pixels_width(std::string code);
-double print_area_pixels_height(std::string code);
-double print_area_pixels_height_prod(std::string code);
-double print_area_pixels_width_prod(std::string code);
+double print_area_pixels(std::string code, bool width);
 
 int find_values_x(std::string);
 int find_values_y(std::string);
