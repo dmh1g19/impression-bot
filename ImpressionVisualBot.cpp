@@ -14,7 +14,7 @@ int main()
 	std::string ImageInput1;   //product image
 	std::string ImageInput2;   //logo image
 
-	std::cout << BOLD(FMAG("\n--- Impression Visual Bot ---"));
+	std::cout << UNDL(BOLD(FRED("\n--- Impression Visual Bot ---")));
 	std::cout << FMAG("\nPlease type on the corresponding numbers to provided questions.\n");
 	std::cout << BOLD(FMAG("\nType in the product number: "));
 	std::cin >> userDataInput;

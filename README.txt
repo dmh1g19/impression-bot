@@ -1,11 +1,4 @@
-This tool is used for the automation of quick and simple product visuals for the promotional product industry.
-
-HOW TO USE:
--Save a CSV version of your promotional product data including the individual product numbers and printing areas in the main directory.
-
-Save product images in the main directory, you can choose whether to write the product or logo image before or after the process.
-
-If the resulting artwork has the undesired effect of chaging pixel colour, please use a different file type such as JPG instead of PNG.
+This tool is used for the automation promotional product image visuals. This tool allows for dynamic and complex placement of images, as well as quick predefined sizes and locations for any given product. Automatic image processing methods are available without having to use expensive image manipulation programs. Anyone can use this software easily and no image editing skills are required at all to produce professional high quality product proofs.
 
 -- Impression Visual Bot v1.0 --
 
