@@ -20,16 +20,22 @@
 #include <sstream>
 #include <curses.h>
 
-cv::Mat productList(std::string, std::string, cv::Mat, cv::Mat, std::string, cv::Mat, cv::Mat, std::string); //finding correct product specs
-cv::Mat turnToAlpha(std::string); //add alpha channel
+//Finding correct product specs
+cv::Mat productList(std::string, std::string, cv::Mat, cv::Mat, std::string, cv::Mat, cv::Mat, std::string);
+
+//Add alpha channel
+cv::Mat turnToAlpha(std::string);
 cv::Mat down_size(cv::Mat, cv::Mat);
 
 cv::Size ratio_resize_prod(double, double, cv::Mat, std::string, std::string);
 cv::Size ratio_resize_logo(double, double, double, double, cv::Mat, std::string, std::string);
 
-std::string regexing(char *dir_name, std::string, std::string); //regex for walking directory
+//Regex for walking directory
+std::string regexing(char *dir_name, std::string, std::string);
 std::string image_type(std::string);
-std::string SplitFilename (const std::string& str); //retrieve file name for regex
+
+ //retrieve file name for regex
+std::string SplitFilename (const std::string& str);
 
 void return_product_data(std::string);
 void overlayImage(const cv::Mat &, const cv::Mat &, cv::Mat &, cv::Point2i);

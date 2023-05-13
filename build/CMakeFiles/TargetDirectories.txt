@@ -1,0 +1,3 @@
+/home/test/Downloads/impression-bot/build/CMakeFiles/edit_cache.dir
+/home/test/Downloads/impression-bot/build/CMakeFiles/rebuild_cache.dir
+/home/test/Downloads/impression-bot/build/CMakeFiles/impression-bot.dir

@@ -1,11 +1,12 @@
-//The product image(background) must contain no alpha channel(3 channel) and the logo(foreground) must contain an alpha channel(4 channel)
+//The product image(background) must contain no alpha channel(3 channel)
+//and the logo(foreground) must contain an alpha channel(4 channel)
 
 #include "ProductList.h"
 
 int main()
 {
-	printf("\033c"); //clear terminal
-	const char *DIR_NAME = "./products/"; //C
+	printf("\033c");
+	const char *DIR_NAME = "./products/";
 	std::string DIR_NAME_LOGO = "./images/";
 	std::string DIR_OUTPUT = "./output/";
 	std::string userDataInput; //product number
@@ -13,10 +14,8 @@ int main()
 	std::string ImageInput1;   //product image
 	std::string ImageInput2;   //logo image
 
-	std::cout << BOLD(FMAG("\nImpression Visual Bot"));
-	std::cout << "\n-----------------------------------------------\n";
-
-	std::cout << FMAG("Please type on the corresponding numbers to provided questions.\n");
+	std::cout << BOLD(FMAG("\n--- Impression Visual Bot ---"));
+	std::cout << FMAG("\nPlease type on the corresponding numbers to provided questions.\n");
 	std::cout << BOLD(FMAG("\nType in the product number: "));
 	std::cin >> userDataInput;
 
@@ -34,9 +33,14 @@ int main()
 	//Turns the JPG image into a png without white pixels 
 	cv::Mat image2 = turnToAlpha(DIR_NAME_LOGO+ImageInput2);
 
-	std::string dir_converted(DIR_NAME); //convert const char to string
- 	cv::Mat image1 = cv::imread(dir_converted + "/" + ImageInput1); // Read the product image file
- 	cv::Mat image1_size = cv::imread(dir_converted + "/" + ImageInput1); // Read the product image file
+  //Convert const char to string
+	std::string dir_converted(DIR_NAME);
+  
+  //Read the product image file
+ 	cv::Mat image1 = cv::imread(dir_converted + "/" + ImageInput1);
+
+  //Read the product image file
+ 	cv::Mat image1_size = cv::imread(dir_converted + "/" + ImageInput1);
 
 	std::string image1_full_path = DIR_NAME+ImageInput1; //full path for product image
 	std::string image2_full_path = DIR_OUTPUT+"converted_image.jpg"; //full path for logo image
