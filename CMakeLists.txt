@@ -19,7 +19,7 @@ add_executable(
   impression-bot
 	image_place.cpp
 	ImpressionVisualBot.cpp
-	ProductList.cpp
+	productList.cpp
 	turnToAlpha.cpp
 	regexing.cpp
 	get_file_name.cpp
